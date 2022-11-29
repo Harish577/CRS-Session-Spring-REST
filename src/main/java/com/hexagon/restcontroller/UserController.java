@@ -3,6 +3,7 @@ package com.hexagon.restcontroller;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class UserController {
+public class UserController
+{
 
 }

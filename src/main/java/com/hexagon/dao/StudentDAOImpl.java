@@ -1,16 +1,19 @@
-package com.hexagon.bean;
+package com.hexagon.dao;
 
 import java.util.List;
 
-public class Student
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class StudentDAOImpl implements StudentDAOInterface
 {
 
-    private String       name;
-    private String       college;
-    private Integer      id;
-    private List<Course> courseList;
+    private String              name;
+    private String              college;
+    private Integer             id;
+    private List<CourseDAOImpl> courseList;
 
-    public Student(String name, String college, Integer id, List<Course> courseList)
+    public StudentDAOImpl(String name, String college, Integer id, List<CourseDAOImpl> courseList)
     {
         super();
         this.name = name;
@@ -49,12 +52,12 @@ public class Student
         this.id = id;
     }
 
-    public List<Course> getCourseList()
+    public List<CourseDAOImpl> getCourseList()
     {
         return courseList;
     }
 
-    public void setCourse(List<Course> courseList)
+    public void setCourse(List<CourseDAOImpl> courseList)
     {
         this.courseList = courseList;
     }

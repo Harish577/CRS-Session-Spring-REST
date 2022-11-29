@@ -1,6 +1,9 @@
-package com.hexagon.bean;
+package com.hexagon.dao;
 
-public class Course
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CourseDAOImpl implements CourseDAOInterface
 {
 
     private String courseName;
@@ -37,7 +40,7 @@ public class Course
         this.department = department;
     }
 
-    public Course(String courseName, String professor, String department)
+    public CourseDAOImpl(String courseName, String professor, String department)
     {
         super();
         this.courseName = courseName;
