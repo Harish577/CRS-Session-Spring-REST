@@ -1,5 +1,6 @@
 package com.hexagon.bean;
 
-public class Professor {
+public class Professor
+{
 
 }
