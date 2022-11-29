@@ -1,5 +1,6 @@
 package com.hexagon.bean;
 
-public class User {
+public class Registration
+{
 
 }
